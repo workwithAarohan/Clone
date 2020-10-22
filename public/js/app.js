@@ -49886,8 +49886,13 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /home/aarohan/Documents/instagram_clone/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /home/aarohan/Documents/instagram_clone/resources/sass/app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! /home/raman/Documents/Clone/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/raman/Documents/Clone/resources/sass/app.scss */"./resources/sass/app.scss");
+>>>>>>> 330b869868e9dcb63cea4ff9381a6b9a84a1cd8f
 
 
 /***/ })
