@@ -7,7 +7,7 @@
     <div class="container w-75">
         <div class="row p-2 justify-content-center mb-4">
             <div class="col-md-3 p-2">
-                <img src="/image/profile/{{$user->profile_img}}" class="rounded-circle"
+                <img src="/image/profile/{{$user->profile_img}}" class="rounded-circle mx-auto d-block profile_img"
                 style="width: 72%;">
             </div>
             <div class="col-md-8 p-2 ml-3">
@@ -21,7 +21,7 @@
                             </a>
                         @endif
                     @else
-                        <a href="#" class="btn btn-primary font-weight-bold"
+                        <a href="{{url('/login')}}" class="btn btn-primary font-weight-bold"
                         style="color: white; height: 100%;">
                             Login
                         </a>
@@ -40,20 +40,20 @@
         <div class="row justify-content-center border-top">
             <div class="d-flex mt-3 font-weight-bold tab">
                 <a href="#" class="pr-5">
-                    <i class="fas fa-th mr-1"></i>Posts
+                    <i class="fas fa-th mr-2"></i>Posts
                 </a>
                 @auth 
                     @if ($user->id == Auth::user()->id)
                         <a href="#" class="pr-5">
-                            <i class="fas fa-tv mr-1"></i>Igtv
+                            <i class="fas fa-tv mr-2"></i>Igtv
                         </a>
                         <a href="#" class="pr-5">
-                            <i class="far fa-bookmark mr-1"></i>Saved
+                            <i class="far fa-bookmark mr-2"></i>Saved
                         </a>   
                     @endif
                 @endauth
                 <a href="#" class="pr-5">
-                    <i class="fas fa-user-tag"></i>Tagged
+                    <i class="fas fa-user-tag mr-2"></i>Tagged
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@
         <?php $post = array(1,2,3,4,5) ?>
         
         @if (count($post)!=0)
-            <div class="row mt-4">
+            <div class="row mt-4 ">
                 @foreach ($post as $value)
                     <div class="col-md-4 mb-4">
                         <a href="#" class="post">
