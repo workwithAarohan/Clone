@@ -1,0 +1,39 @@
+*
+{
+    background-color: white;
+}
+
+a
+{
+    text-decoration: none !important;
+    font-size: 1rem;
+}
+
+.d-flex a
+{
+    color: black;
+}
+
+.url    
+{
+    color: #00376B;
+    font-weight: bold;
+}
+
+.tab > a
+{
+    color: #A2948E;
+    font-size: 0.84rem;
+    text-transform: uppercase;
+}
+
+
+.overlay
+{
+    top: 0;
+    position: absolute;
+    background: rgba(48, 48, 48, 0.3);
+    width: 272px;
+    height: 182px;
+    display: none;
+}
