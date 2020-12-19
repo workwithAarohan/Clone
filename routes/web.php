@@ -17,7 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile/{user}','App\Http\Controllers\ProfileController@index')->name('user.profile');
+Route::get('/profile/{user}','App\Http\Controllers\PostController@index')->name('user.profile');
+Route::patch('/profileimg/{profile}/','App\Http\Controllers\ProfileController@update_profilepic')->name('user.updateimage');
+
+Route::resources([
+    '/post'=> App\Http\Controllers\PostController::class,
+]);
+Route::get('/profile/{user}/saved','App\Http\Controllers\PostController@saved')->name('posts.saved');
 
 Auth::routes();
 
